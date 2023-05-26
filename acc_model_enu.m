@@ -122,8 +122,8 @@ xlabel('roll, deg')
 ylabel('pitch, deg')
 zlabel('roll error, deg')
 grid on
-cmnstr = 'r_err_vs_r_p_err.png';
-print(figure(1), cmnstr, '-dpng', '-r300');
+% cmnstr = 'r_err_vs_r_p_err.png';
+% print(figure(1), cmnstr, '-dpng', '-r300');
 
 % % pitch error vs roll & pitch
 figure(2);
@@ -137,8 +137,8 @@ xlabel('roll, deg')
 ylabel('pitch, deg')
 zlabel('pitch error, deg')
 grid on
-cmnstr = 'p_err_vs_r_p_err.png';
-print(figure(2), cmnstr, '-dpng', '-r300');
+% cmnstr = 'p_err_vs_r_p_err.png';
+% print(figure(2), cmnstr, '-dpng', '-r300');
              
 % to plot the following dependencies correctly you must set one of the angles by zeros 
 % azimuth error vs roll & pitch
@@ -153,8 +153,8 @@ xlabel('roll, deg')
 ylabel('pitch, deg')
 zlabel('azimuth error, deg')
 grid on
-cmnstr = 'az_err_vs_r_p.png';
-print(figure(3), cmnstr, '-dpng', '-r300');
+% cmnstr = 'az_err_vs_r_p.png';
+% print(figure(3), cmnstr, '-dpng', '-r300');
 
 % % azimuth error vs roll & azimuth
 % figure(4);

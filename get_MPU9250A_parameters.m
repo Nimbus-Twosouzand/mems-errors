@@ -17,7 +17,8 @@ sigma_m = 0.6 * 1e-6 * 1;
 % ACCELEROMETER
 
 % zero-g initial calibration tolerance (bias)
-b_a = [sign(randn(1))*0.06; sign(randn(1))*0.06; sign(randn(1))*0.08];
+% per axis AngRandwalk
+b_a = [b_a; b_a; b_a]; % make em same IDGF wether they XYZ or not
 
 % cross axis sensitivity
 mis_a = [0 sign(randn(1))*0.002 sign(randn(1))*0.002; 
